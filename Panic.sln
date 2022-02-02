@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{6CDCF832-B741-4930-B611-36D758C965C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainServices", "DomainServices", "{738428D4-ED6B-434C-9689-B352B2F8B5BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IDomainServices", "IDomainServices", "{FEC0C691-71AD-41E0-9518-42F5E9ED17E0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AASA.NetCore.Api.Panic", "Api\AASA.NetCore.Api.Panic\AASA.NetCore.Api.Panic.csproj", "{69D083B8-CA2A-4EB6-8C24-3E622A7FFA6B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AASA.NetCore.IDomainService.Panic", "IDomainServices\AASA.Netcore.IDomainService.Panic\AASA.NetCore.IDomainService.Panic.csproj", "{A211F423-ADF7-48EB-B5FE-57271A17766E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69D083B8-CA2A-4EB6-8C24-3E622A7FFA6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69D083B8-CA2A-4EB6-8C24-3E622A7FFA6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69D083B8-CA2A-4EB6-8C24-3E622A7FFA6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69D083B8-CA2A-4EB6-8C24-3E622A7FFA6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A211F423-ADF7-48EB-B5FE-57271A17766E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A211F423-ADF7-48EB-B5FE-57271A17766E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A211F423-ADF7-48EB-B5FE-57271A17766E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A211F423-ADF7-48EB-B5FE-57271A17766E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{69D083B8-CA2A-4EB6-8C24-3E622A7FFA6B} = {6CDCF832-B741-4930-B611-36D758C965C0}
+		{A211F423-ADF7-48EB-B5FE-57271A17766E} = {FEC0C691-71AD-41E0-9518-42F5E9ED17E0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4AD218D-ADB1-4408-8104-C3586B66AC97}
+	EndGlobalSection
+EndGlobal

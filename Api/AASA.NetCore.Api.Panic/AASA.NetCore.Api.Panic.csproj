@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>11416a2e-040d-4e0f-b3a3-8b2667fa3122</UserSecretsId>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+      <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+  
+  <!--<PropertyGroup>
+    <ServerGarbageCollection>false</ServerGarbageCollection>
+  </PropertyGroup>-->
+  
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="4.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="3.1.6" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.2" />
+    <PackageReference Include="Polly" Version="7.2.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.4.0" />
+    <PackageReference Include="Serilog.Enrichers.Environment" Version="2.1.3" />
+    <PackageReference Include="Serilog.Formatting.Elasticsearch" Version="8.4.1" />
+    <PackageReference Include="Serilog.Sinks.Debug" Version="1.0.1" />
+    <PackageReference Include="Serilog.Sinks.Elasticsearch" Version="8.4.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.6.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.6.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.6.3" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\IDomainServices\AASA.Netcore.IDomainService.Panic\AASA.NetCore.IDomainService.Panic.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AASA.NetCore.DomainService.Panic">
+      <HintPath>..\..\Common References\AASA.NetCore.DomainService.Panic.dll</HintPath>
+    </Reference>
+    <Reference Include="AASA.NetCore.Lib.CacheManager">
+      <HintPath>..\..\Common References\AASA.NetCore.Lib.CacheManager.dll</HintPath>
+    </Reference>
+    <Reference Include="AASA.NetCore.Lib.Common">
+      <HintPath>..\..\Common References\AASA.NetCore.Lib.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="AASA.NetCore.Lib.Helper">
+      <HintPath>..\..\Common References\AASA.NetCore.Lib.Helper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+
+</Project>

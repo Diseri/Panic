@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AASA.NetCore.Lib.Common">
+      <HintPath>..\..\Common References\AASA.NetCore.Lib.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="AASA.NetCore.Lib.Helper">
+      <HintPath>..\..\Common References\AASA.NetCore.Lib.Helper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

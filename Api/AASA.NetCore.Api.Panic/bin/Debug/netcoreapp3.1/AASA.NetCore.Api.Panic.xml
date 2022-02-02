@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AASA.NetCore.Api.Panic</name>
+    </assembly>
+    <members>
+        <member name="M:AASA.NetCore.v1.Panic.Controllers.AuthenticationController.GetAuthToken(AASA.NetCore.Api.Panic.Models.Authenticate)">
+             <summary>
+             To get the Bearer Token
+             </summary>
+             <remarks>
+             Sample request:
+             {
+             	"username":"your username",
+             	"password":"your password",
+             	"client_secret":"your secret",
+             	"client_id":"your id"
+             }
+             <br /> 
+             Note:
+             This token only lasts a certain time period, after expiry you will have to request a new token.
+             </remarks>
+             <param name="value"></param>
+             <returns>The access_token (Bearer Token)</returns>
+             <response code="200">
+             Sample Response
+             <br />
+             {
+             <br />
+              "access_token": "access token string",
+              <br />
+              "expires_in": (Time frame),
+              <br />
+              "token_type": "Bearer",
+              <br />
+              "scope": "(example)"
+              <br />
+            }
+             </response>
+        </member>
+        <member name="M:AASA.NetCore.v1.Panic.Controllers.PanicController.Create(AASA.NetCore.IDomainService.Panic.Models.PanicRequestModel)">
+            <summary>
+            Log a case with the AA
+            </summary>
+            <remarks>
+            Authentication Type : Bearer (Access Token)
+            <br /> 
+            You are required to call the Authentication method and pass a Bearer Token received in the Header.
+            <br /> 
+            The token provided lasts for a certain time period before it expires.
+            </remarks>
+            <param name="value"></param>
+            <returns>Successfull response object</returns>
+            <response code="200">
+            </response>
+        </member>
+        <member name="M:AASA.NetCore.v1.Panic.Controllers.PanicController.Delete(AASA.NetCore.IDomainService.Panic.Models.PanicCancellation)">
+            <summary>
+            Cancel a case with the AA
+            </summary>
+            <remarks>
+            Authentication Type : Bearer (Access Token)
+            <br /> 
+            You are required to call the Authentication method and pass a Bearer Token received in the Header.
+            <br /> 
+            The token provided lasts for a certain time period before it expires.
+            </remarks>
+            <param name="value"></param>
+            <returns>Successfull response object</returns>
+            <response code="200">
+            </response>
+        </member>
+        <member name="M:AASA.NetCore.v1.Panic.Controllers.PanicController.GetStatus(System.String)">
+            <summary>
+            Get the Status of the Case
+            </summary>
+            <remarks>
+            Authentication Type : Bearer (Access Token)
+            <br /> 
+            You are required to call the Authentication method and pass a Bearer Token received in the Header.
+            <br /> 
+            The token provided lasts for a certain time period before it expires.
+            </remarks>
+            <param name="CaseNumber"></param>
+            <returns>Successfull response object</returns>
+            <response code="200">
+            </response>
+        </member>
+        <member name="M:AASA.NetCore.v1.Panic.Controllers.PanicController.GetClientActiveWorkOrders(System.String)">
+            <summary>
+            Get Active Work Orders for a client
+            </summary>
+            <remarks>
+            Authentication Type : Bearer (Access Token)
+            <br /> 
+            You are required to call the Authentication method and pass a Bearer Token received in the Header.
+            <br /> 
+            The token provided lasts for a certain time period before it expires.
+            </remarks>
+            <param name="MobileNo"></param>
+            <returns>Successfull response object</returns>
+            <response code="200">
+            </response>
+        </member>
+        <member name="M:AASA.NetCore.v1.Panic.Controllers.PanicController.GetAllStatusUpdates(System.String)">
+            <summary>
+            Get All Status Updates for a particular case.
+            </summary>
+            <remarks>
+            Authentication Type : Bearer (Access Token)
+            <br /> 
+            You are required to call the Authentication method and pass a Bearer Token received in the Header.
+            <br /> 
+            The token provided lasts for a certain time period before it expires.
+            </remarks>
+            <param name="CaseNumber"></param>
+            <returns>Successfull response object</returns>
+            <response code="200">
+            </response>
+        </member>
+        <member name="M:AASA.NetCore.v1.Panic.Controllers.PanicController.CreateWorkOrderNote(AASA.NetCore.IDomainService.Panic.Models.NotePackage)">
+            <summary>
+            Create a note against your work order with the AA
+            </summary>
+            <remarks>
+            Authentication Type : Bearer (Access Token)
+            <br /> 
+            You are required to call the Authentication method and pass a Bearer Token received in the Header.
+            <br /> 
+            The token provided lasts for a certain time period before it expires.
+            </remarks>
+            <param name="package"></param>
+            <returns>Successfull response object</returns>
+            <response code="200">
+            </response>
+        </member>
+        <member name="M:AASA.NetCore.v1.Panic.Controllers.PanicController.CreateCaseNote(AASA.NetCore.IDomainService.Panic.Models.NotePackage)">
+            <summary>
+            Create a note against your case with the AA
+            </summary>
+            <remarks>
+            Authentication Type : Bearer (Access Token)
+            <br /> 
+            You are required to call the Authentication method and pass a Bearer Token received in the Header.
+            <br /> 
+            The token provided lasts for a certain time period before it expires.
+            </remarks>
+            <param name="package"></param>
+            <returns>Successfull response object</returns>
+            <response code="200">
+            </response>
+        </member>
+        <member name="M:AASA.NetCore.v1.Panic.Controllers.PanicController.CallMeBack(AASA.NetCore.IDomainService.Panic.Models.PanicTelematics)">
+            <summary>
+            Log a Call Me Back with the AA
+            </summary>
+            <remarks>
+            Authentication Type : Bearer (Access Token)
+            <br /> 
+            You are required to call the Authentication method and pass a Bearer Token received in the Header.
+            <br /> 
+            The token provided lasts for a certain time period before it expires.
+            </remarks>
+            <param name="value"></param>
+            <returns>Successfull response object</returns>
+            <response code="200">
+            </response>
+        </member>
+    </members>
+</doc>

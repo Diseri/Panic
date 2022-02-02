@@ -1,0 +1,43 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:57146",
+      "sslPort": 44309
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "AASA_ENVIRONMENT": "QA",
+        "AASA_GROUPID": "1de80a3b-0cd4-4141-a4cb-640aea21b61b",
+        "ASPNETCORE_ENVIRONMENT": "QA"
+      }
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/api/health",
+      "environmentVariables": {
+        "AASA_ENVIRONMENT": "QA",
+        "AASA_GROUPID": "1"
+      }
+    },
+    "AASA.NetCore.Api.Panic": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:50007",
+      "environmentVariables": {
+        "AASA_ENVIRONMENT": "QA",
+        "AASA_GROUPID": "1",
+        "ASPNETCORE_ENVIRONMENT": "QA"
+      }
+    }
+  }
+}

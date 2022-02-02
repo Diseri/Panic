@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "W1/89RiC+yq+EHxS1pqWgn03iPach8MIQNZsAiimgPKWN0X8s+tur11Dd5p7atvj6jXyPdVYhL7vVyXb/8hVBQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Diseri.Pearson\\Desktop\\Panic\\Panic\\IDomainServices\\AASA.Netcore.IDomainService.Panic\\AASA.NetCore.IDomainService.Panic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Diseri.Pearson\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
